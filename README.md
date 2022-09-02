@@ -1,6 +1,8 @@
 # Ross Mountjoy Portfolio (portfolio-client)
 
-A Portfolio Website
+Welcome to my portfolio website's source code! This repository contains the front end of the site. It is written in Vue 3 using the Quasar framework. To view the source code for the API (written using FastAPI) [Click Here](https://github.com/rmountjoy92/portfolio-server)
+
+## To install locally:
 
 ## Install the dependencies
 ```bash
