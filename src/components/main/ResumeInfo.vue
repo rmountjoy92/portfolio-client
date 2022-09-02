@@ -69,7 +69,7 @@
         </q-item>
 
         <q-item
-          href="https://github.com/rmountjoy92"
+          href="https://github.com/rmountjoy92/portfolio-client"
           target="_blank"
           style="text-decoration: none"
           clickable
