@@ -6,10 +6,10 @@
         :key="`project-item-${index}`"
       >
         <q-item-section>
-          <q-item-label class="text-primary text-h6">
+          <q-item-label class="text-primary text-h6 selectable">
             {{ project.name }}
           </q-item-label>
-          <q-item-label caption>
+          <q-item-label caption class="selectable">
             {{ project.description }}
           </q-item-label>
           <q-item-label>
@@ -32,7 +32,7 @@
                 target="_blank"
               >
                 <q-item-section>
-                  <q-item-label class="text-accent">
+                  <q-item-label class="text-accent" lines="1">
                     {{ url }}
                   </q-item-label>
                 </q-item-section>
@@ -60,6 +60,7 @@
                       v-for="(t, index) in project.tech_used"
                       :key="`project-t-${index}`"
                       :label="t"
+                      class="selectable"
                     />
                   </q-item-label>
                 </q-item-section>
@@ -83,7 +84,7 @@
                 :key="`project-achievement-${index}`"
               >
                 <q-item-section>
-                  <q-item-label class="text-muted">
+                  <q-item-label class="text-muted selectable">
                     {{ a }}
                   </q-item-label>
                 </q-item-section>
@@ -102,7 +103,7 @@
                   </q-item-label>
                 </q-item-section>
               </q-item>
-              <q-item>
+              <q-item class="q-pa-none">
                 <q-item-section>
                   <q-item-label>
                     <q-carousel
@@ -114,8 +115,8 @@
                       control-color="primary"
                       navigation
                       padding
-                      arrows
-                      height="300px"
+                      :arrows="$q.screen.gt.sm"
+                      height="350px"
                     >
                       <q-carousel-slide
                         v-for="(p, index) in project.screenshots"
@@ -123,11 +124,19 @@
                         :name="p"
                         class="column no-wrap flex-center"
                       >
-                        <img
+                        <q-img
                           @click="imgViewer.open(p)"
                           style="width: 100%"
                           :src="p"
                           class="rounded-borders cursor-pointer shadow-2"
+                        >
+                        </q-img>
+                        <q-btn
+                          @click="imgViewer.open(p)"
+                          icon="fas fa-search"
+                          flat
+                          class="q-mt-md lt-md"
+                          color="accent"
                         />
                       </q-carousel-slide>
                     </q-carousel>

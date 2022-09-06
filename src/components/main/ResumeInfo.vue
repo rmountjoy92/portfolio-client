@@ -80,7 +80,7 @@
           <q-item-section class="text-primary text-body1">
             <q-item-label> View this website's code on Github </q-item-label>
             <q-item-label caption>
-              It's was made using Vue 3 and Quasar!</q-item-label
+              It was made using Vue 3 and Quasar!</q-item-label
             >
           </q-item-section>
         </q-item>

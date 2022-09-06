@@ -7,19 +7,12 @@
     maximized
   >
     <q-card>
-      <q-toolbar>
-        <q-toolbar-title class="text-center"> </q-toolbar-title>
-        <q-btn
+      <div class="scroll q-pa-md" style="max-height: calc(100vh - 50px)">
+        <q-img
           @click="close"
-          icon="fas fa-times"
-          dense
-          flat
-          round
-          class="q-ml-sm"
+          :src="data.src"
+          class="shadow-2 rounded-borders"
         />
-      </q-toolbar>
-      <div class="scroll" style="max-height: calc(100vh - 50px)">
-        <q-img :src="data.src" />
       </div>
     </q-card>
   </q-dialog>
@@ -44,6 +37,8 @@ export default {
     function close() {
       data.isOpen = false;
       data.src = "";
+      let page = document.getElementById("q-app");
+      page.style.zoom = "100%";
     }
 
     expose({

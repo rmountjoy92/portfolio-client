@@ -4,6 +4,7 @@
       <q-item
         v-for="(hobby, index) in resumeStore.data.hobbies"
         :key="`hobby-item-${index}`"
+        class="selectable"
       >
         <q-item-section>
           <q-item-label class="text-primary text-h6">

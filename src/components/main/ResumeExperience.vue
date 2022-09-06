@@ -7,16 +7,16 @@
         class="q-pt-md"
       >
         <q-item-section>
-          <q-item-label class="text-primary text-h6">
+          <q-item-label class="text-primary text-h6 selectable">
             {{ exp.company }}
           </q-item-label>
-          <q-item-label caption class="text-accent text-bold">
+          <q-item-label caption class="text-accent text-bold selectable">
             {{ exp.title }}
           </q-item-label>
-          <q-item-label caption class="text-accent">
+          <q-item-label caption class="text-accent selectable">
             {{ exp.date }}
           </q-item-label>
-          <q-item-label caption>
+          <q-item-label caption class="selectable">
             {{ exp.info }}
           </q-item-label>
           <q-item-label>
@@ -33,7 +33,7 @@
                 :key="`exp-duty-${index}`"
               >
                 <q-item-section>
-                  <q-item-label class="text-muted">
+                  <q-item-label class="text-muted selectable">
                     {{ duty }}
                   </q-item-label>
                 </q-item-section>
