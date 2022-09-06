@@ -321,7 +321,7 @@ function getResumePdf(resumeData) {
         color: "#FF9966",
       },
       caption: {
-        color: "#ffb5b5",
+        color: "#7a7a7a",
       },
       code: {
         color: "#c2fa00",
