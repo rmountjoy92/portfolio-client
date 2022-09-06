@@ -1,5 +1,7 @@
-const baseUrl = "http://localhost:8000";
-const clientUrl = "http://localhost:8080";
+// const baseUrl = "http://localhost:8000";
+// const clientUrl = "http://localhost:8080";
+const baseUrl = "https://api.mountjoy.tech";
+const clientUrl = "https://mountjoy.tech";
 
 class Api {
   constructor() {
