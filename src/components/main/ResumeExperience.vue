@@ -16,6 +16,9 @@
           <q-item-label caption>
             {{ exp.date }}
           </q-item-label>
+          <q-item-label caption>
+            {{ exp.info }}
+          </q-item-label>
           <q-item-label>
             <q-list bordered separator class="rounded-borders q-my-md">
               <q-item dense>
