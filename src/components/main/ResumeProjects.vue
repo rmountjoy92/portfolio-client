@@ -124,9 +124,9 @@
                         class="column no-wrap flex-center"
                       >
                         <img
-                          @click="imgViewer.open(screenshotUrl(p))"
+                          @click="imgViewer.open(p)"
                           style="width: 100%"
-                          :src="screenshotUrl(p)"
+                          :src="p"
                           class="rounded-borders cursor-pointer shadow-2"
                         />
                       </q-carousel-slide>
@@ -146,7 +146,6 @@
 
 <script>
 import { useResumeStore } from "stores/resume";
-import { baseUrl } from "boot/api";
 import { onMounted, reactive, ref } from "vue";
 import ImgViewer from "components/global/ImgViewer";
 
@@ -161,10 +160,6 @@ export default {
       slides: {},
     });
 
-    function screenshotUrl(p) {
-      return `${baseUrl}${p}`;
-    }
-
     onMounted(() => {
       resumeStore.data.projects.forEach((prj, i) => {
         data.slides[i] = prj.screenshots[0];
@@ -173,7 +168,6 @@ export default {
 
     return {
       resumeStore,
-      screenshotUrl,
       data,
       imgViewer,
     };

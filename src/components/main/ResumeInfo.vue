@@ -2,7 +2,7 @@
   <div class="col-12 row q-mt-md">
     <div class="col-12 text-center">
       <q-avatar size="82px">
-        <img :src="avatarUrl" />
+        <img :src="resumeStore.data.info.headshot" />
       </q-avatar>
     </div>
     <div class="col-12 text-center text-h6 text-primary q-mt-md">
@@ -117,15 +117,12 @@ export default {
     const pdfViewer = ref(null);
     const pdfGen = ref(null);
 
-    const avatarUrl = baseUrl + resumeStore.data.info.headshot;
-
     const resumePdfDD = computed(() => {
       return getResumePdf(resumeStore.data);
     });
 
     return {
       resumeStore,
-      avatarUrl,
       baseUrl,
       pdfViewer,
       pdfGen,
