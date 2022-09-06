@@ -1,6 +1,6 @@
 <template>
   <div class="col-12 q-my-md">
-    <q-list bordered separator class="rounded-borders">
+    <q-list bordered separator class="rounded-borders text-muted">
       <q-item
         v-for="(skillType, index) in [
           { label: 'Backend', icon: 'fas fa-server' },

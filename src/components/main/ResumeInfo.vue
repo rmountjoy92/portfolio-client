@@ -12,7 +12,7 @@
       {{ resumeStore.data.info.title }}
     </div>
     <div class="col-12 q-my-md">
-      <q-list bordered separator class="rounded-borders">
+      <q-list bordered separator class="rounded-borders text-muted">
         <q-item>
           <q-item-section avatar>
             <q-avatar icon="fas fa-map-marker-alt" />

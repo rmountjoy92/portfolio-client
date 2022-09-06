@@ -32,7 +32,7 @@
                 target="_blank"
               >
                 <q-item-section>
-                  <q-item-label class="text-primary">
+                  <q-item-label class="text-accent">
                     {{ url }}
                   </q-item-label>
                 </q-item-section>
@@ -83,7 +83,7 @@
                 :key="`project-achievement-${index}`"
               >
                 <q-item-section>
-                  <q-item-label>
+                  <q-item-label class="text-muted">
                     {{ a }}
                   </q-item-label>
                 </q-item-section>

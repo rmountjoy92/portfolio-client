@@ -10,10 +10,10 @@
           <q-item-label class="text-primary text-h6">
             {{ exp.company }}
           </q-item-label>
-          <q-item-label caption>
+          <q-item-label caption class="text-accent text-bold">
             {{ exp.title }}
           </q-item-label>
-          <q-item-label caption>
+          <q-item-label caption class="text-accent">
             {{ exp.date }}
           </q-item-label>
           <q-item-label caption>
@@ -23,9 +23,7 @@
             <q-list bordered separator class="rounded-borders q-my-md">
               <q-item dense>
                 <q-item-section>
-                  <q-item-label
-                    class="text-overline text-center text-secondary"
-                  >
+                  <q-item-label class="text-overline text-center text-primary">
                     Duties
                   </q-item-label>
                 </q-item-section>
@@ -35,7 +33,7 @@
                 :key="`exp-duty-${index}`"
               >
                 <q-item-section>
-                  <q-item-label>
+                  <q-item-label class="text-muted">
                     {{ duty }}
                   </q-item-label>
                 </q-item-section>

@@ -21,7 +21,7 @@
         clickable
       >
         <q-item-section avatar>
-          <q-avatar icon="fas fa-envelope" />
+          <q-avatar icon="fas fa-envelope" class="text-muted" />
         </q-item-section>
         <q-item-section class="text-primary text-body1">
           <q-item-label> Request references contact info </q-item-label>
