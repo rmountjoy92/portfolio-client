@@ -105,6 +105,10 @@ function getResumePdf(resumeData) {
                     },
                     {
                       text: o.date,
+                      style: "primary",
+                    },
+                    {
+                      text: o.info,
                       style: "caption",
                     },
                     {
